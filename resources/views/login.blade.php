@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" defer></script>
-    <link rel="stylesheet" href="{{ asset('CSS/login.css') }}">
-    <script type="text/javascript" href="{{ asset('JS/login.js') }}" defer></script>
+    <link rel="stylesheet" href="{{asset('CSS/login.css')}}">
+    <script src="{{asset('JS/login.js')}}" defer></script>
     
 </head>
 <body>
