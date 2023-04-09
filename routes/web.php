@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +24,5 @@ Route::get('/loginadmin', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/home',[LoginController::class,'show']);
+Route::post('/home',[LoginController::class,'save']);
