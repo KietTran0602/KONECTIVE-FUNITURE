@@ -30,7 +30,7 @@
             </nav>
         </section>
         <nav>
-          <a href="/login" target="_blank">           
+          <a href="/login">           
             <div>
               <span><i class="fa-solid fa-user"></i></span>
               <p>Login</p>

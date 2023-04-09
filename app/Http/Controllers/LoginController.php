@@ -17,7 +17,7 @@ class LoginController extends BaseController
     public function save(Request $REQUEST){
         $username = $REQUEST ->username;
         $passwords = $REQUEST ->passwords;
-        DB::table('Login_user')->insert([
+        DB::table('Loginuser')->insert([
             'username' => $username,
             'passwords' => $passwords
         ]);
