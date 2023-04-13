@@ -21,8 +21,7 @@ Route::get('/', function () {
 Route::get('/loginadmin', function () {
     return view('loginadmin');
 });
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/home',[LoginController::class,'show']);
-Route::post('/home',[LoginController::class,'save']);
+Route::get('/index',[LoginController::class,'show']);
+Route::post('/index',[LoginController::class,'signin']);
+Route::get('/login',[LoginController::class,'shows']);
+Route::post('/login',[LoginController::class,'signup']);
