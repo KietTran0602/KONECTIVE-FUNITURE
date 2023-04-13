@@ -30,7 +30,7 @@ class LoginController extends BaseController
             if(count($mangcheckre)){
                 DB::table('Loginuser')->insert([
                     'username' => $username,
-                    'passwords' => $passwords
+                    'passwords' => bcrypt($passwords)
                 ]);
                 return redirect('index');
             }else{
@@ -50,11 +50,9 @@ class LoginController extends BaseController
             if(count($mangpassword)){
                 return redirect('index');
             }else{
-                $tb = 'Password không đúng';
                 return redirect('login');
             }
         }else{
-            $tb = 'Email không đúng';
             return redirect('login');
         }
     }
