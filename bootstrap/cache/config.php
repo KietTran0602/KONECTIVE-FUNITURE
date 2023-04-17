@@ -10,7 +10,7 @@
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:wqOnsmWGxYD95Sy1ixduUqbdhDmVEeGipd8kDw86X7o=',
+    'key' => 'base64:1ssb76Pt3re4agOzuzQbkA8M3ZocVzIHTLy25B+A0yM=',
     'cipher' => 'AES-256-CBC',
     'maintenance' => 
     array (
@@ -196,7 +196,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => '/home/vagrant/code/KONECTIVE-FUNITURE/storage/framework/cache/data',
+        'path' => '/home/vagrant/KONECTIVE-FUNITURE/storage/framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -290,7 +290,7 @@
         'host' => '192.168.56.56',
         'port' => '3306',
         'database' => 'KONECTIVE',
-        'username' => 'MapMapTest',
+        'username' => 'kiettran',
         'password' => '12345678',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
@@ -310,7 +310,7 @@
         'host' => '192.168.56.56',
         'port' => '3306',
         'database' => 'KONECTIVE',
-        'username' => 'MapMapTest',
+        'username' => 'kiettran',
         'password' => '12345678',
         'charset' => 'utf8',
         'prefix' => '',
@@ -325,7 +325,7 @@
         'host' => '192.168.56.56',
         'port' => '3306',
         'database' => 'KONECTIVE',
-        'username' => 'MapMapTest',
+        'username' => 'kiettran',
         'password' => '12345678',
         'charset' => 'utf8',
         'prefix' => '',
@@ -369,13 +369,13 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => '/home/vagrant/code/KONECTIVE-FUNITURE/storage/app',
+        'root' => '/home/vagrant/KONECTIVE-FUNITURE/storage/app',
         'throw' => false,
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => '/home/vagrant/code/KONECTIVE-FUNITURE/storage/app/public',
+        'root' => '/home/vagrant/KONECTIVE-FUNITURE/storage/app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
         'throw' => false,
@@ -395,7 +395,7 @@
     ),
     'links' => 
     array (
-      '/home/vagrant/code/KONECTIVE-FUNITURE/public/storage' => '/home/vagrant/code/KONECTIVE-FUNITURE/storage/app/public',
+      '/home/vagrant/KONECTIVE-FUNITURE/public/storage' => '/home/vagrant/KONECTIVE-FUNITURE/storage/app/public',
     ),
   ),
   'hashing' => 
@@ -434,13 +434,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => '/home/vagrant/code/KONECTIVE-FUNITURE/storage/logs/laravel.log',
+        'path' => '/home/vagrant/KONECTIVE-FUNITURE/storage/logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => '/home/vagrant/code/KONECTIVE-FUNITURE/storage/logs/laravel.log',
+        'path' => '/home/vagrant/KONECTIVE-FUNITURE/storage/logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -493,7 +493,7 @@
       ),
       'emergency' => 
       array (
-        'path' => '/home/vagrant/code/KONECTIVE-FUNITURE/storage/logs/laravel.log',
+        'path' => '/home/vagrant/KONECTIVE-FUNITURE/storage/logs/laravel.log',
       ),
     ),
   ),
@@ -559,7 +559,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => '/home/vagrant/code/KONECTIVE-FUNITURE/resources/views/vendor/mail',
+        0 => '/home/vagrant/KONECTIVE-FUNITURE/resources/views/vendor/mail',
       ),
     ),
   ),
@@ -665,7 +665,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => '/home/vagrant/code/KONECTIVE-FUNITURE/storage/framework/sessions',
+    'files' => '/home/vagrant/KONECTIVE-FUNITURE/storage/framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -685,9 +685,9 @@
   array (
     'paths' => 
     array (
-      0 => '/home/vagrant/code/KONECTIVE-FUNITURE/resources/views',
+      0 => '/home/vagrant/KONECTIVE-FUNITURE/resources/views',
     ),
-    'compiled' => '/home/vagrant/code/KONECTIVE-FUNITURE/storage/framework/views',
+    'compiled' => '/home/vagrant/KONECTIVE-FUNITURE/storage/framework/views',
   ),
   'flare' => 
   array (
@@ -762,7 +762,7 @@
     array (
     ),
     'enable_runnable_solutions' => NULL,
-    'remote_sites_path' => '/home/vagrant/code/KONECTIVE-FUNITURE',
+    'remote_sites_path' => '/home/vagrant/KONECTIVE-FUNITURE',
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
     'settings_file_path' => '',
