@@ -8,6 +8,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\HASH;
 class LoginController extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
@@ -19,24 +20,27 @@ class LoginController extends BaseController
     }
     public function signup(Request $REQUEST){
         $username = $REQUEST ->username;
-        $passwords = $REQUEST ->validate(['passwords' => ['min:8','max:20',]]);
-        $repasswords = $REQUEST ->repasswords;
-        
+        $passwords = $REQUEST ->passwords;
+        $repasswords = $REQUEST ->repasswords;   
         $mangcheckuser = DB::select("select * from Loginuser where username=?",[$username]);
         $mangcheckre = DB::select("select * from Loginuser where passwords=?",[$repasswords]);
         if(count($mangcheckuser)){
-            return redirect('login');
+            $tb = "Username đã tồn tại";
+            return redirect('login')->with('tbs',$tb);
         }else{
-            if(count($mangcheckre)){
-                DB::table('Loginuser')->insert([
-                    'username' => $username,
-                    'passwords' => bcrypt($passwords)
-                ]);
-                return redirect('index');
-            }else{
+            if(!preg_match("/^(?=.{8,20})(?=.*[A-Z])(?=.*[0-9])/i",$passwords)){
                 return redirect('login');
+            }else{
+                if(count($mangcheckre)){
+                    DB::table('Loginuser')->insert([
+                        'username' => $username,
+                        'passwords' => HASH::make($passwords)
+                    ]);
+                    return redirect('index');
+                }else{
+                    return redirect('login');
+                }
             }
-            
         }
         
     }
@@ -54,7 +58,7 @@ class LoginController extends BaseController
                 return redirect('login')->with('tb',$tb);
             }
         }else{
-            $tb = '';
+            $tb = 'Email không đúng';
             return redirect('login')->with('tb',$tb);
         }
     }

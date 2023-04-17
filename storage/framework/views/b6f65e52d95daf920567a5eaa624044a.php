@@ -28,6 +28,7 @@
 					<li><i class="fa-solid fa-x"></i> Numbers</li>
 					<li><i class="fa-solid fa-x"></i> 8 - 20 Characters</li>
 					<li>incorrect Re-Password</li>
+					<span><?php echo e(session('tbs')); ?></span>
 				</ul>
 				<button type='submit'>Sign Up</button>
 			</form>
