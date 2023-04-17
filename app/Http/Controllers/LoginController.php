@@ -51,7 +51,6 @@ class LoginController extends BaseController
         $mangpassword = DB::select("select * from Loginuser where passwords=?",[$passwordssigin]);
         if(count($manguser)){
             if(count($mangpassword)){
-                
                 return redirect('index');
             }else{
                 $tb = 'Password không đúng';
