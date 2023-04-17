@@ -3,41 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>KONECTIVE FUNITURE</title>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" defer></script>
     @vite(['resources/js/index.js','resources/css/index.css'])
 </head>
 <body>
     <!-- ========== -->
     <header>
-        <section>
-            <a href="/">
-              <strong>KONECTIVE</strong>FUNITURE
-            </a>
-            
-        </section>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="#" class="btn1">HOME</a></li>
-                    <li><a href="##" class="btn1 active1">PRODUCT</a></li>
-                    <li><a href="###" class="btn1 active1">FUNITURE SET</a></li>
-                    <li><a href="####" class="btn1 active1">POLICY</a></li>
-                    <li><a href="######" class="btn1 active1">CONTACT</a></li>
-                </ul>
-            </nav>
-        </section>
+    <section>
+        <a href="/">
+            <strong>KONECTIVE</strong>FUNITURE
+        </a>
+    </section>
+    <section>
         <nav>
-          <a href="/login">           
-            <div>
-              <span><i class="fa-solid fa-user"></i></span>
-              <p>Login</p>
-            </div>
-          </a>
+            <ul>
+                <li><a href="#" class="btn1">HOME</a></li>
+                <li><a href="##" class="btn1 active1">PRODUCT</a></li>
+                <li><a href="###" class="btn1 active1">FUNITURE SET</a></li>
+                <li><a href="####" class="btn1 active1">POLICY</a></li>
+                <li><a href="######" class="btn1 active1">CONTACT</a></li>
+            </ul>
         </nav>
+    </section>
+    <nav>
+        <a href="/login">           
+        <div>
+            <span><i class="fa-solid fa-user"></i></span>
+            <p>Login</p>
+        </div>
+        </a>
+    </nav>
     </header>
-
+    
     <section>
         <div class="banner1">
             <div class="images">

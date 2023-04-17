@@ -3,36 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>KONECTIVE FUNITURE</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" defer></script>
     <?php echo app('Illuminate\Foundation\Vite')(['resources/js/index.js','resources/css/index.css']); ?>
 </head>
 <body>
     <!-- ========== -->
     <header>
-    <section>
-        <a href="/">
-            <strong>KONECTIVE</strong>FUNITURE
-        </a>
-    </section>
-    <section>
-        <nav>
-            <ul>
-                <li><a href="#" class="btn1">HOME</a></li>
-                <li><a href="##" class="btn1 active1">PRODUCT</a></li>
-                <li><a href="###" class="btn1 active1">FUNITURE SET</a></li>
-                <li><a href="####" class="btn1 active1">POLICY</a></li>
-                <li><a href="######" class="btn1 active1">CONTACT</a></li>
-            </ul>
-        </nav>
-    </section>
-    <nav>
-        <a href="/login">           
-        <div>
-            <span><i class="fa-solid fa-user"></i></span>
-            <p>Login</p>
-        </div>
-        </a>
-    </nav>
+        <?php echo $__env->yieldContent('menu'); ?>
     </header>
     
     <section>
@@ -67,4 +46,4 @@
       </div>
     </section>
 </body>
-</html><?php /**PATH /home/vagrant/code/KONECTIVE-FUNITURE/resources/views/index.blade.php ENDPATH**/ ?>
+</html><?php /**PATH /home/vagrant/code/KONECTIVE-FUNITURE/resources/views/layouts/index.blade.php ENDPATH**/ ?>
