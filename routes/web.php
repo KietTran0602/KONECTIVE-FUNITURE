@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,13 +15,13 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/',[IndexController::class,'show']);
+Route::get('/home',[IndexController::class,'shows']);
+Route::get('/store',[IndexController::class,'shows']);
 Route::get('/loginadmin', function () {
     return view('loginadmin');
 });
-Route::get('/index',[LoginController::class,'show']);
-Route::post('/index',[LoginController::class,'signin']);
+Route::get('/menu',[LoginController::class,'show']);
+Route::post('/menu',[LoginController::class,'signin']);
 Route::get('/login',[LoginController::class,'shows']);
 Route::post('/login',[LoginController::class,'signup']);

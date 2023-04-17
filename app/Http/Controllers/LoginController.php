@@ -13,7 +13,7 @@ class LoginController extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
     public function show(): View{
-        return view('index');
+        return view('menu');
     }
     public function shows(): View{
         return view('login');
@@ -23,7 +23,6 @@ class LoginController extends BaseController
         $passwords = $REQUEST ->passwords;
         $repasswords = $REQUEST ->repasswords;   
         $mangcheckuser = DB::select("select * from Loginuser where username=?",[$username]);
-        $mangcheckre = DB::select("select * from Loginuser where passwords=?",[$repasswords]);
         if(count($mangcheckuser)){
             $tb = "Username đã tồn tại";
             return redirect('login')->with('tbs',$tb);
@@ -31,12 +30,12 @@ class LoginController extends BaseController
             if(!preg_match("/^(?=.{8,20})(?=.*[A-Z])(?=.*[0-9])/i",$passwords)){
                 return redirect('login');
             }else{
-                if(count($mangcheckre)){
+                if($passwords == $repasswords){
                     DB::table('Loginuser')->insert([
                         'username' => $username,
                         'passwords' => HASH::make($passwords)
                     ]);
-                    return redirect('index');
+                    return redirect('menu');
                 }else{
                     return redirect('login');
                 }
@@ -51,7 +50,7 @@ class LoginController extends BaseController
         $mangpassword = DB::select("select * from Loginuser where passwords=?",[$passwordssigin]);
         if(count($manguser)){
             if(count($mangpassword)){
-                return redirect('index');
+                return redirect('menu');
             }else{
                 $tb = 'Password không đúng';
                 return redirect('login')->with('tb',$tb);

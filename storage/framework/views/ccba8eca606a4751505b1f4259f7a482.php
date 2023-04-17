@@ -9,6 +9,7 @@
 <body>
     <!-- ========== -->
     <header>
+      <?php echo $__env->make("../index", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
       <?php echo $__env->yieldContent("menu"); ?>
     </header>
     
@@ -44,4 +45,4 @@
       </div>
     </section>
 </body>
-</html><?php /**PATH /home/vagrant/code/KONECTIVE-FUNITURE/resources/views/index.blade.php ENDPATH**/ ?>
+</html><?php /**PATH /home/vagrant/code/KONECTIVE-FUNITURE/resources/views////index.blade.php ENDPATH**/ ?>

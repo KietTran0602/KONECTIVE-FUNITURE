@@ -34,7 +34,7 @@
 			</form>
 		</div>
 		<div class="form-container sign-in-container" id="Sign-In">
-			<form action="/index" id="signin" method="post">
+			<form action="/menu" id="signin" method="post">
 				<h1>Sign in</h1>
 				<div class="social-container">
 					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
