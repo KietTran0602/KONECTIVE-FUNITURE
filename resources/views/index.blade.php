@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" defer></script>
-    <link rel="stylesheet" href="{{ asset('CSS/index.css') }}">
-    <script type="text/javascript" href="{{ asset('JS/index.js') }}" defer></script>
+    @vite(['resources/js/index.js','resources/css/index.css'])
 </head>
 <body>
     <!-- ========== -->

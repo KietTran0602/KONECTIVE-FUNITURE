@@ -19,7 +19,7 @@ class LoginController extends BaseController
     }
     public function signup(Request $REQUEST){
         $username = $REQUEST ->username;
-        $passwords = $REQUEST ->passwords;
+        $passwords = $REQUEST ->validate(['passwords' => ['min:8','max:20',]]);
         $repasswords = $REQUEST ->repasswords;
         
         $mangcheckuser = DB::select("select * from Loginuser where username=?",[$username]);
@@ -41,19 +41,21 @@ class LoginController extends BaseController
         
     }
     public function signin(Request $REQUEST){
-        $tb="";
         $usernamesignin = $REQUEST ->usernamesignin;
         $passwordssigin = $REQUEST ->passwordssignin;
         $manguser = DB::select("select * from Loginuser where username=?",[$usernamesignin]);
         $mangpassword = DB::select("select * from Loginuser where passwords=?",[$passwordssigin]);
         if(count($manguser)){
             if(count($mangpassword)){
+                
                 return redirect('index');
             }else{
-                return redirect('login');
+                $tb = 'Password không đúng';
+                return redirect('login')->with('tb',$tb);
             }
         }else{
-            return redirect('login');
+            $tb = '';
+            return redirect('login')->with('tb',$tb);
         }
     }
 }

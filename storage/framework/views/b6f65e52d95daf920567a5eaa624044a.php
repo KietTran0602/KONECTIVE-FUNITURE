@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" defer></script>
-    <link rel="stylesheet" href="<?php echo e(asset('CSS/login.css')); ?>">
-    <script src="<?php echo e(asset('JS/login.js')); ?>" defer></script>
-    
+	<?php echo app('Illuminate\Foundation\Vite')(['resources/css/login.css','resources/js/login.js']); ?>
 </head>
 <body>
     <header></header>
@@ -49,6 +47,7 @@
 				<input type="checkbox" name="checkbox" id="checkbox" value="lsRememberMe">
 				<label for="checkbox">Remember Me</label>
 				<a href="#">Forgot your password?</a>
+				<span><?php echo e(session('tb')); ?></span>
 				<button type='submit'>Sign In</button>
 			</form>
 		</div>
