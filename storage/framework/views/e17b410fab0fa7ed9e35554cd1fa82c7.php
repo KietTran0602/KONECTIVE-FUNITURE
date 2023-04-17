@@ -12,7 +12,7 @@
     <header></header>
     <section class="container" id="container">
 		<div class="form-container sign-up-container" id="Sign-Up">
-			<form action="/home" id="signup" method='post'>
+			<form action="/login" id="signup" method='post'>
 				<h1>Create Account</h1>
 				<div class="social-container">
 					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -23,7 +23,7 @@
 				<input type="text" placeholder="Email" name='username'/>
 				<input type="password" placeholder="Password" name='passwords'/>
 				<span><i class="fa-solid fa-eye-slash"></i></span>
-				<input type="password" placeholder="Re-Password" />
+				<input type="password" placeholder="Re-Password" name='repasswords' />
 				<span><i class="fa-solid fa-eye-slash"></i></span>
 				<ul class="checklist hiden">
 					<li><i class="fa-solid fa-x"></i> Uppercase Letter</li>
@@ -35,7 +35,7 @@
 			</form>
 		</div>
 		<div class="form-container sign-in-container" id="Sign-In">
-			<form action="#" id="signin">
+			<form action="/index" id="signin" method="post">
 				<h1>Sign in</h1>
 				<div class="social-container">
 					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -43,13 +43,13 @@
 					<a href="#" class="social"><i class="fa-brands fa-youtube"></i></a>
 				</div>
 				<span>or use your account</span>
-				<input type="text" placeholder="Email"/>
-				<input type="password" placeholder="Password"/>
+				<input type="text" placeholder="Email" name='usernamesignin'/>
+				<input type="password" placeholder="Password" name='passwordssignin'/>
 				<span ><i class="fa-solid fa-eye-slash"></i></span>
 				<input type="checkbox" name="checkbox" id="checkbox" value="lsRememberMe">
 				<label for="checkbox">Remember Me</label>
 				<a href="#">Forgot your password?</a>
-				<button>Sign In</button>
+				<button type='submit'>Sign In</button>
 			</form>
 		</div>
 		<div class="overlay-container">
