@@ -16,8 +16,11 @@ use App\Http\Controllers\IndexController;
 */
 
 Route::get('/',[IndexController::class,'show']);
-Route::get('/home',[IndexController::class,'shows']);
-Route::get('/store',[IndexController::class,'shows']);
+Route::get('/home',[IndexController::class,'show']);
+Route::get('/product',[IndexController::class,'show']);
+Route::get('/funiture-set',[IndexController::class,'show']);
+Route::get('/policy',[IndexController::class,'show']);
+Route::get('/contact',[IndexController::class,'show']);
 Route::get('/loginadmin', function () {
     return view('loginadmin');
 });

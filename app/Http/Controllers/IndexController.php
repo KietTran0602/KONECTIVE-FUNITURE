@@ -16,10 +16,16 @@ class IndexController extends BaseController
         $cc = "layouts.index";
         if($REQUEST->Path() == 'home'){
             $cc = "layouts.index";
-        }else if($REQUEST->Path() == 'store'){
+        }else if($REQUEST->Path() == 'product'){
             $cc = "layouts.store";
+        }else if($REQUEST->Path() == 'funiture-set'){
+            $cc = "layouts.funiture";
+        }else if($REQUEST->Path() == 'policy'){
+            $cc = "layouts.policy";
+        }else if($REQUEST->Path() == 'contact'){
+            $cc = "layouts.contact";
         }
         
-        return view('menu', ['cc'=> $cc]);
+        return view('menu',['cc' => $cc]);
     }
 }

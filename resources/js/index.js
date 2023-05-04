@@ -1,11 +1,12 @@
-let bts = document.getElementsByClassName("btn1");
-for(let i = 0; i<bts.length; i++){
-    bts[i].addEventListener('click',function(){
-        for(let j = 0; j<bts.length; j++){
-            j==i ? bts[j].classList.remove("active1") : bts[j].classList.add("active1");
-        }
-    })
-}
+// let bts = document.getElementsByClassName("btn1");
+// for(let i = 0; i<bts.length; i++){
+//     bts[i].addEventListener('click',function(){
+//         for(let j = 0; j<bts.length; j++){
+//             j==i ? bts[j].classList.remove("active1") : bts[j].classList.add("active1");
+//         }
+//     })
+// }
+
 //slider click
 var indexValue = 1;
 showImg(indexValue);

@@ -11,15 +11,5 @@
     <header>
       @yield("menu")
     </header>
-    <section>
-        <div class="banner1">
-        <div class="images">
-          <img src="IMAGE/index/banner1.jpg">
-          <img src="IMAGE/index/banner2.jpg">
-          <img src="IMAGE/index/banner3.jpg">
-          <img src="IMAGE/index/banner4.jpg">
-          <img src="IMAGE/index/banner5.jpg">
-        </div>
-    </section>
 </body>
 </html>
