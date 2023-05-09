@@ -14,17 +14,20 @@ use App\Http\Controllers\IndexController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('/loginadmin', function () {return view('loginadmin');});
+Route::get('/login',[LoginController::class,'shows']);
+Route::post('/login',[LoginController::class,'signup']);
+Route::get('/',[LoginController::class,'signout']);
+Route::post('/home',[LoginController::class,'signin']);
 Route::get('/',[IndexController::class,'show']);
 Route::get('/home',[IndexController::class,'show']);
+// Route::get('/home',[LoginController::class,'signout']);
 Route::get('/product',[IndexController::class,'show']);
 Route::get('/funiture-set',[IndexController::class,'show']);
 Route::get('/policy',[IndexController::class,'show']);
 Route::get('/contact',[IndexController::class,'show']);
-Route::get('/loginadmin', function () {
-    return view('loginadmin');
-});
-Route::get('/menu',[LoginController::class,'show']);
-Route::post('/menu',[LoginController::class,'signin']);
-Route::get('/login',[LoginController::class,'shows']);
-Route::post('/login',[LoginController::class,'signup']);
+
+
+
+
+

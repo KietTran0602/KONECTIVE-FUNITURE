@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Session;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
@@ -35,7 +35,7 @@ class LoginController extends BaseController
                         'username' => $username,
                         'passwords' => HASH::make($passwords)
                     ]);
-                    return redirect('menu');
+                    return redirect('home');
                 }else{
                     return redirect('login');
                 }
@@ -50,7 +50,8 @@ class LoginController extends BaseController
         $mangpassword = DB::select("select * from Loginuser where passwords=?",[$passwordssigin]);
         if(count($manguser)){
             if(count($mangpassword)){
-                return redirect('menu');
+                $r=$REQUEST->session()->put('username1',$usernamesignin);
+                return redirect('home');
             }else{
                 $tb = 'Password không đúng';
                 return redirect('login')->with('tb',$tb);
@@ -60,4 +61,9 @@ class LoginController extends BaseController
             return redirect('login')->with('tb',$tb);
         }
     }
+    public function signout(Request $REQUEST){
+        $r = $REQUEST->session()->flush();
+        return redirect('home');
+    }
 }
+    

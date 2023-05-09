@@ -10,7 +10,7 @@
     <header></header>
     <section class="container" id="container">
 		<div class="form-container sign-up-container" id="Sign-Up">
-			<form action="/login" id="signup" method='post'>
+			<form action="/home" id="signup" method='post'>
 				<h1>Create Account</h1>
 				<div class="social-container">
 					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -34,7 +34,7 @@
 			</form>
 		</div>
 		<div class="form-container sign-in-container" id="Sign-In">
-			<form action="/menu" id="signin" method="post">
+			<form action="/home" id="signin" method="post">
 				<h1>Sign in</h1>
 				<div class="social-container">
 					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>

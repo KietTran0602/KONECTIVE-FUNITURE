@@ -9,7 +9,7 @@
 <body>
     <!-- ========== -->
     <header>
-      <?php echo $__env->yieldContent("menu"); ?>
+      <?php echo $__env->make("menu", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     </header>
     
     <section>

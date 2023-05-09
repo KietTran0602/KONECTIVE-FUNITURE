@@ -5,6 +5,5 @@
     <title>KONECTIVE FUNITURE</title>
 </head>
 <body>
-  {{count($manguser)}}
 </body>
 </html>

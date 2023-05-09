@@ -25,7 +25,7 @@ class IndexController extends BaseController
         }else if($REQUEST->Path() == 'contact'){
             $cc = "layouts.contact";
         }
-        
+
         return view('menu',['cc' => $cc]);
     }
 }
