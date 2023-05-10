@@ -4,14 +4,22 @@ import laravel from 'laravel-vite-plugin';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 
+            input: [
+                'resources/css/app.css', 
                 'resources/js/app.js',
+                'resources/js/bootstrap.min.js',
+                'resources/js/jquery.backstretch.min.js',
+                'resources/js/jquery.js',
                 'resources/css/login.css', 
                 'resources/js/login.js',
                 'resources/css/loginadmin.css',
                 'resources/js/loginadmin.js',
                 'resources/css/index.css',
-                'resources/js/index.js'
+                'resources/js/index.js',
+                'resources/css/profile.css',
+                'resources/css/bootstrap.min.css',
+                'resources/css/font-awesome.min.css',
+                'resources/js/profile.js'
             ],
             refresh: true,
         }),

@@ -10,7 +10,7 @@
     <header></header>
     <section class="container" id="container">
 		<div class="form-container sign-up-container" id="Sign-Up">
-			<form action="/home" id="signup" method='post'>
+			<form action="/login" id="signup" method='post'>
 				<h1>Create Account</h1>
 				<div class="social-container">
 					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -28,8 +28,8 @@
 					<li><i class="fa-solid fa-x"></i> Numbers</li>
 					<li><i class="fa-solid fa-x"></i> 8 - 20 Characters</li>
 					<li>incorrect Re-Password</li>
-					<span><?php echo e(session('tbs')); ?></span>
 				</ul>
+				<span class="tb"><?php echo e(session('tbs')); ?></span>
 				<button type='submit'>Sign Up</button>
 			</form>
 		</div>
@@ -48,7 +48,7 @@
 				<input type="checkbox" name="checkbox" id="checkbox" value="lsRememberMe">
 				<label for="checkbox">Remember Me</label>
 				<a href="#">Forgot your password?</a>
-				<span><?php echo e(session('tb')); ?></span>
+				<span class="tb"><?php echo e(session('tb')); ?></span>
 				<button type='submit'>Sign In</button>
 			</form>
 		</div>

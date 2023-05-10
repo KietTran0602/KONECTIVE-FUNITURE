@@ -24,8 +24,8 @@ class LoginController extends BaseController
         $repasswords = $REQUEST ->repasswords;   
         $mangcheckuser = DB::select("select * from Loginuser where username=?",[$username]);
         if(count($mangcheckuser)){
-            $tb = "Username đã tồn tại";
-            return redirect('login')->with('tbs',$tb);
+            $tb = "Email Has Already Taken";
+            return redirect('login')->with('tb',$tb);
         }else{
             if(!preg_match("/^(?=.{8,20})(?=.*[A-Z])(?=.*[0-9])/i",$passwords)){
                 return redirect('login');
@@ -35,7 +35,8 @@ class LoginController extends BaseController
                         'username' => $username,
                         'passwords' => HASH::make($passwords)
                     ]);
-                    return redirect('home');
+                    $tb = "User Create Sussecful";
+                    return redirect('login')->with('tb',$tb);
                 }else{
                     return redirect('login');
                 }
@@ -44,20 +45,22 @@ class LoginController extends BaseController
         
     }
     public function signin(Request $REQUEST){
-        $usernamesignin = $REQUEST ->usernamesignin;
-        $passwordssigin = $REQUEST ->passwordssignin;
-        $manguser = DB::select("select * from Loginuser where username=?",[$usernamesignin]);
-        $mangpassword = DB::select("select * from Loginuser where passwords=?",[$passwordssigin]);
+        $usernamesignin = $REQUEST -> usernamesignin;
+        $passwordssigin = $REQUEST -> passwordssignin;
+        $manguser = DB::select("select username from Loginuser where username=?",[$usernamesignin]);
+        $mangpassword = DB::select("select passwords from Loginuser where username=?",[$usernamesignin]);
         if(count($manguser)){
-            if(count($mangpassword)){
-                $r=$REQUEST->session()->put('username1',$usernamesignin);
-                return redirect('home');
-            }else{
-                $tb = 'Password không đúng';
-                return redirect('login')->with('tb',$tb);
+            foreach($mangpassword as $check){
+                if(Hash::check($passwordssigin,$check->passwords)){
+                    $r=$REQUEST->session()->put('username1',$usernamesignin);
+                    return redirect('home');
+                }else{
+                    $tb = 'Password Incorrect';
+                    return redirect('login')->with('tb',$tb);
+                }
             }
         }else{
-            $tb = 'Email không đúng';
+            $tb = 'Email Incorrect';
             return redirect('login')->with('tb',$tb);
         }
     }

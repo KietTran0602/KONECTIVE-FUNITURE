@@ -28,4 +28,5 @@ class IndexController extends BaseController
 
         return view('menu',['cc' => $cc]);
     }
+    
 }
