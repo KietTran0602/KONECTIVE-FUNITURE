@@ -53,8 +53,5 @@ function showImg2(){
 
     setTimeout(showImg2, 3000); 
 }
-// setTimeout(()=> {
-//     location.replace("https://www.w3schools.com");
-// }, 3000);
 
 

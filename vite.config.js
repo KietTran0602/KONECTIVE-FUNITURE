@@ -7,9 +7,6 @@ export default defineConfig({
             input: [
                 'resources/css/app.css', 
                 'resources/js/app.js',
-                'resources/js/bootstrap.min.js',
-                'resources/js/jquery.backstretch.min.js',
-                'resources/js/jquery.js',
                 'resources/css/login.css', 
                 'resources/js/login.js',
                 'resources/css/loginadmin.css',
@@ -19,7 +16,7 @@ export default defineConfig({
                 'resources/css/profile.css',
                 'resources/css/bootstrap.min.css',
                 'resources/css/font-awesome.min.css',
-                'resources/js/profile.js'
+                'resources/css/shop.css',
             ],
             refresh: true,
         }),

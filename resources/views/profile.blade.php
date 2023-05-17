@@ -7,6 +7,10 @@
 Easy Profile Template
 http://www.templatemo.com/tm-467-easy-profile
 -->
+<script src="{{asset('js/jquery.js')}}" defer></script>
+<script src="{{asset('js/jquery.backstretch.min.js')}}" defer></script>
+<script src="{{asset('js/bootstrap.min.js')}}" defer></script>
+<script src="{{asset('js/profile.js')}}" defer></script>
 	<!-- stylesheet css -->
     @vite(['resources/css/profile.css', 'resources/css/bootstrap.min.css','resources/css/font-awesome.min.css'])
 </head>
@@ -144,9 +148,6 @@ http://www.templatemo.com/tm-467-easy-profile
 </footer>
 
 <!-- javascript js -->	
-@vite(['resources/js/jquery.js',
-    'resources/js/bootstrap.min.js',
-    'resources/js/jquery.backstretch.min.js',
-    'resources/js/profile.js'])
+
 </body>
 </html>

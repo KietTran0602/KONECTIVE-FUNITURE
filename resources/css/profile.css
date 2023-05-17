@@ -103,6 +103,8 @@ h2 {
      align-items: center;
     background: none repeat scroll 0 0 #fff;
   background: none repeat scroll 0 0 #f9f9f9;
+  /* animation: fade-out 1s ease-out both; */
+
 }
 .sk-spinner-wordpress.sk-spinner {
   background-color: #3366CC;
@@ -139,7 +141,26 @@ h2 {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
-
+@keyframes rotate-out-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    opacity: 0;
+  }
+}
+/* @keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
 /* header section */
 header {
   text-align: center;

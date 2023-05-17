@@ -11,5 +11,6 @@
     <header>
       <?php echo $__env->yieldContent("menu"); ?>
     </header>
+    
 </body>
 </html><?php /**PATH /home/vagrant/code/KONECTIVE-FUNITURE/resources/views/layouts/funiture.blade.php ENDPATH**/ ?>
