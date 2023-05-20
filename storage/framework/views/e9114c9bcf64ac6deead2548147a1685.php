@@ -11,6 +11,6 @@
     <header>
       <?php echo $__env->yieldContent("menu"); ?>
     </header>
-    
+    <p>cc thằng Kiệt to lắm</p>
 </body>
 </html><?php /**PATH /home/vagrant/code/KONECTIVE-FUNITURE/resources/views/layouts/funiture.blade.php ENDPATH**/ ?>

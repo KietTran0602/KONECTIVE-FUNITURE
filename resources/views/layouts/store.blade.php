@@ -24,91 +24,21 @@
     <script src="{{asset('shop/js/stellar.js')}}" defer></script>
     <script src="{{asset('shop/js/price_rangs.js')}}" defer></script>
     <script src="{{asset('shop/js/custom.js')}}" defer></script>
-    @vite(['resources/js/index.js','resources/css/shop.css','resources/css/index.css'])
+    @vite(['resources/js/index.js', 'resources/css/index.css','resources/css/shop.css'])
 </head>
 <body>
-    <!-- ========== -->
     <header>
-      <!-- @yield("menu") -->
-    </header>
-    <!-- ========== -->
-    <!--::header part start::-->
-    <header class="main_menu home_menu">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="shop/img/logo.png" alt="logo"> </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="menu_icon"><i class="fas fa-bars"></i></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Shop
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                        <a class="dropdown-item" href="category.html"> shop category</a>
-                                        <a class="dropdown-item" href="single-product.html">product details</a>
-
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_3"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        pages
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                        <a class="dropdown-item" href="login.html"> login</a>
-                                        <a class="dropdown-item" href="tracking.html">tracking</a>
-                                        <a class="dropdown-item" href="checkout.html">product checkout</a>
-                                        <a class="dropdown-item" href="cart.html">shopping cart</a>
-                                        <a class="dropdown-item" href="confirmation.html">confirmation</a>
-                                        <a class="dropdown-item" href="elements.html">elements</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_2"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        blog
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                        <a class="dropdown-item" href="blog.html"> blog</a>
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="hearer_icon d-flex">
-                            <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
-                            <a href=""><i class="ti-heart"></i></a>
-                            <div class="dropdown cart">
-                                <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-cart-plus"></i>
-                                </a>
-                                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <div class="single_product">
-    
-                                    </div>
-                                </div> -->
-
-                            </div>
-                        </div>
-                    </nav>
-                </div>
+    @yield("menu")
+        <!-- <div class="container">
+            <div class="hearer_icon d-flex">
+                <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
+                <a href=""><i class="ti-heart"></i></a>
+                <div class="dropdown cart">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+                </div> 
             </div>
         </div>
         <div class="search_input" id="search_input_box">
@@ -119,7 +49,7 @@
                     <span class="ti-close" id="close_search" title="Close Search"></span>
                 </form>
             </div>
-        </div>
+        </div> -->
     </header>
     <!-- Header part end-->
 
@@ -317,7 +247,7 @@
                     <div class="row align-items-center latest_product_inner">
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="img/product/product_1.png" alt="">
+                                <img src="shop/img/product/product_1.png" alt="">
                                 <div class="single_product_text">
                                     <h4>Quartz Belt Watch</h4>
                                     <h3>$150.00</h3>
@@ -327,7 +257,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="img/product/product_2.png" alt="">
+                                <img src="shop/img/product/product_2.png" alt="">
                                 <div class="single_product_text">
                                     <h4>Quartz Belt Watch</h4>
                                     <h3>$150.00</h3>
@@ -337,7 +267,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="img/product/product_3.png" alt="">
+                                <img src="shop/img/product/product_3.png" alt="">
                                 <div class="single_product_text">
                                     <h4>Quartz Belt Watch</h4>
                                     <h3>$150.00</h3>
@@ -347,7 +277,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="img/product/product_4.png" alt="">
+                                <img src="shop/img/product/product_4.png" alt="">
                                 <div class="single_product_text">
                                     <h4>Quartz Belt Watch</h4>
                                     <h3>$150.00</h3>
@@ -357,7 +287,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="img/product/product_5.png" alt="">
+                                <img src="shop/img/product/product_5.png" alt="">
                                 <div class="single_product_text">
                                     <h4>Quartz Belt Watch</h4>
                                     <h3>$150.00</h3>
@@ -367,7 +297,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="img/product/product_6.png" alt="">
+                                <img src="shop/img/product/product_6.png" alt="">
                                 <div class="single_product_text">
                                     <h4>Quartz Belt Watch</h4>
                                     <h3>$150.00</h3>
@@ -377,7 +307,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="img/product/product_7.png" alt="">
+                                <img src="shop/img/product/product_7.png" alt="">
                                 <div class="single_product_text">
                                     <h4>Quartz Belt Watch</h4>
                                     <h3>$150.00</h3>
@@ -387,7 +317,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="img/product/product_8.png" alt="">
+                                <img src="shop/img/product/product_8.png" alt="">
                                 <div class="single_product_text">
                                     <h4>Quartz Belt Watch</h4>
                                     <h3>$150.00</h3>
@@ -397,7 +327,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="img/product/product_2.png" alt="">
+                                <img src="shop/img/product/product_2.png" alt="">
                                 <div class="single_product_text">
                                     <h4>Quartz Belt Watch</h4>
                                     <h3>$150.00</h3>
@@ -450,35 +380,35 @@
                 <div class="col-lg-12">
                     <div class="best_product_slider owl-carousel">
                         <div class="single_product_item">
-                            <img src="img/product/product_1.png" alt="">
+                            <img src="shop/img/product/product_1.png" alt="">
                             <div class="single_product_text">
                                 <h4>Quartz Belt Watch</h4>
                                 <h3>$150.00</h3>
                             </div>
                         </div>
                         <div class="single_product_item">
-                            <img src="img/product/product_2.png" alt="">
+                            <img src="shop/img/product/product_2.png" alt="">
                             <div class="single_product_text">
                                 <h4>Quartz Belt Watch</h4>
                                 <h3>$150.00</h3>
                             </div>
                         </div>
                         <div class="single_product_item">
-                            <img src="img/product/product_3.png" alt="">
+                            <img src="shop/img/product/product_3.png" alt="">
                             <div class="single_product_text">
                                 <h4>Quartz Belt Watch</h4>
                                 <h3>$150.00</h3>
                             </div>
                         </div>
                         <div class="single_product_item">
-                            <img src="img/product/product_4.png" alt="">
+                            <img src="shop/img/product/product_4.png" alt="">
                             <div class="single_product_text">
                                 <h4>Quartz Belt Watch</h4>
                                 <h3>$150.00</h3>
                             </div>
                         </div>
                         <div class="single_product_item">
-                            <img src="img/product/product_5.png" alt="">
+                            <img src="shop/img/product/product_5.png" alt="">
                             <div class="single_product_text">
                                 <h4>Quartz Belt Watch</h4>
                                 <h3>$150.00</h3>

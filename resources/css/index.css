@@ -9,33 +9,34 @@ body{
     margin: 0 auto;
     padding: 0;
     height: 10000px;
-    width: 90%;
-    background-color: rgb(32,33,36);
+    width: 100%;
 }
-
 header{
     background-color: rgb(32,33,36);
     display: flex;
     margin-top: 5px;
     padding-bottom: 20px;
     border-bottom: 2px solid white;
+    position: sticky;
+    top:0;
+    z-index: 999;
     user-select: none!important;
 }
-body > header > section:nth-child(1) a{
+ header > section:nth-child(1) a{
     margin-top: 10px ;
     flex: 30%;
     text-align: left;
     font-size: 55px;
     letter-spacing: -5px;
 }
-body > header > section:nth-child(1) a{
+ header > section:nth-child(1) a{
     color: white;
 }
-body > header > section:nth-child(1) strong{
+ header > section:nth-child(1) strong{
     color: salmon;
     
 }
-body > header > section:nth-child(2){
+ header > section:nth-child(2){
     flex: 67.5%;
     text-align: right;
     margin-top: 25px;
@@ -47,7 +48,7 @@ header ul{
     padding: 0;
     overflow: hidden;
 }
-body > header > section:nth-child(2) > nav li{
+ header > section:nth-child(2) > nav li{
     display: inline-block;
     margin: 0;
     padding: 20px 0px;
@@ -57,14 +58,14 @@ body > header > section:nth-child(2) > nav li{
     position: relative;
     z-index: 1;
 }
-body > header > section:nth-child(2) > nav li a{
+ header > section:nth-child(2) > nav li a{
     position: relative;
     z-index: 1;
     margin: 0;
     padding: 20px 10px;
     /* border: 1px solid black; */
 }
-body > header > section:nth-child(2) > nav p{
+ header > section:nth-child(2) > nav p{
     position: relative; 
     z-index: 0;
     top: -2.5px;
@@ -74,47 +75,47 @@ body > header > section:nth-child(2) > nav p{
     padding: 0;
     border: 0;
 }
-body > header > section:nth-child(2) > nav li a:link, body > header > section:nth-child(2) > nav li a:visited{
+ header > section:nth-child(2) > nav li a:link,  header > section:nth-child(2) > nav li a:visited{
     text-decoration: none;
     color: black ;
 }
-body > header > section:nth-child(2) > nav li a:hover{
+ header > section:nth-child(2) > nav li a:hover{
     transition: all 0.3s ;
     color: black !important;
 }
-body > header > section:nth-child(2) > nav li:nth-child(1) a:link,
-body > header > section:nth-child(2) > nav li:nth-child(1) a:visited{
+ header > section:nth-child(2) > nav li:nth-child(1) a:link,
+ header > section:nth-child(2) > nav li:nth-child(1) a:visited{
     background: #fa955e;
 }
-body > header > section:nth-child(2) > nav li:nth-child(1) a:hover{
+ header > section:nth-child(2) > nav li:nth-child(1) a:hover{
     background: #fa955e !important;
 }
-body > header > section:nth-child(2) > nav li:nth-child(2) a:link,
-body > header > section:nth-child(2) > nav li:nth-child(2) a:visited{
+ header > section:nth-child(2) > nav li:nth-child(2) a:link,
+ header > section:nth-child(2) > nav li:nth-child(2) a:visited{
     background: #ffe863;
 }
-body > header > section:nth-child(2) > nav li:nth-child(2) a:hover{
+ header > section:nth-child(2) > nav li:nth-child(2) a:hover{
     background: #ffe863 !important;
 }
-body > header > section:nth-child(2) > nav li:nth-child(3) a:link,
-body > header > section:nth-child(2) > nav li:nth-child(3) a:visited{
+ header > section:nth-child(2) > nav li:nth-child(3) a:link,
+ header > section:nth-child(2) > nav li:nth-child(3) a:visited{
     background: #9cff88;
 }
-body > header > section:nth-child(2) > nav li:nth-child(3) a:hover{
+ header > section:nth-child(2) > nav li:nth-child(3) a:hover{
     background: #9cff88 !important;
 }
-body > header > section:nth-child(2) > nav li:nth-child(4) a:link,
-body > header > section:nth-child(2) > nav li:nth-child(4) a:visited{
+ header > section:nth-child(2) > nav li:nth-child(4) a:link,
+ header > section:nth-child(2) > nav li:nth-child(4) a:visited{
     background: #a0c4ff;
 }
-body > header > section:nth-child(2) > nav li:nth-child(4) a:hover{
+ header > section:nth-child(2) > nav li:nth-child(4) a:hover{
     background: #a0c4ff !important;
 }
-body > header > section:nth-child(2) > nav li:nth-child(5) a:link,
-body > header > section:nth-child(2) > nav li:nth-child(5) a:visited{
+ header > section:nth-child(2) > nav li:nth-child(5) a:link,
+ header > section:nth-child(2) > nav li:nth-child(5) a:visited{
     background: #ff90ff;
 }
-body > header > section:nth-child(2) > nav li:nth-child(5) a:hover{
+ header > section:nth-child(2) > nav li:nth-child(5) a:hover{
     background: #ff90ff !important;
 }
 .active1{
@@ -155,13 +156,8 @@ header > nav > a > div:hover > span >svg{
     transition: 0.3s color;
     color: black;
 }
-header{
-    position: sticky;
-    top:0;
-    z-index: 999;
-}
 /* =============================================== slider*/
-body > section:nth-child(2){
+ section:nth-child(2){
     margin: 20px 132px 0;
 
 }

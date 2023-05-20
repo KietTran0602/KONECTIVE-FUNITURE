@@ -23,7 +23,7 @@ Route::get('/',[IndexController::class,'show']);
 Route::get('/home',[IndexController::class,'show']);
 // Route::get('/home',[LoginController::class,'signout']);
 Route::get('/product',[IndexController::class,'show']);
-Route::get('/funiture-set',[IndexController::class,'show']);
+Route::get('/furniture-set',[IndexController::class,'show']);
 Route::get('/policy',[IndexController::class,'show']);
 Route::get('/contact',[IndexController::class,'show']);
 Route::get('/profile', function () {return view('profile');});
