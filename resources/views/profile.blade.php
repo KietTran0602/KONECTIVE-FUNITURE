@@ -2,15 +2,16 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Profile</title>
+	<title>KONECTIVE FURNITURE</title>
 <!-- 
 Easy Profile Template
 http://www.templatemo.com/tm-467-easy-profile
 -->
-<script src="{{asset('js/jquery.js')}}" defer></script>
-<script src="{{asset('js/jquery.backstretch.min.js')}}" defer></script>
-<script src="{{asset('js/bootstrap.min.js')}}" defer></script>
-<script src="{{asset('js/profile.js')}}" defer></script>
+	<link rel="icon" href="IMAGE/icon.png">
+	<script src="{{asset('js/jquery.js')}}" defer></script>
+	<script src="{{asset('js/jquery.backstretch.min.js')}}" defer></script>
+	<script src="{{asset('js/bootstrap.min.js')}}" defer></script>
+	<script src="{{asset('js/profile.js')}}" defer></script>
 	<!-- stylesheet css -->
     @vite(['resources/css/profile.css', 'resources/css/bootstrap.min.css','resources/css/font-awesome.min.css'])
 </head>

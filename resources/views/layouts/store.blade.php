@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KONECTIVE FUNITURE</title>
+    <title>KONECTIVE FURNITURE</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" defer></script>
-    <link rel="icon" href="shop/img/favicon.png">
+    <link rel="icon" href="IMAGE/icon.png">
     <script src="{{asset('shop/js/jquery-1.12.1.min.js')}}" defer></script>
     <script src="{{asset('shop/js/popper.min.js')}}" defer></script>
     <script src="{{asset('shop/js/bootstrap.min.js')}}" defer></script>
@@ -29,30 +29,8 @@
 <body>
     <header>
     @yield("menu")
-        <!-- <div class="container">
-            <div class="hearer_icon d-flex">
-                <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
-                <a href=""><i class="ti-heart"></i></a>
-                <div class="dropdown cart">
-                    <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-cart-plus"></i>
-                    </a>
-                </div> 
-            </div>
-        </div>
-        <div class="search_input" id="search_input_box">
-            <div class="container ">
-                <form class="d-flex justify-content-between search-inner">
-                    <input type="text" class="form-control" id="search_input" placeholder="Search Here">
-                    <button type="submit" class="btn"></button>
-                    <span class="ti-close" id="close_search" title="Close Search"></span>
-                </form>
-            </div>
-        </div> -->
     </header>
     <!-- Header part end-->
-
     <!--================Home Banner Area =================-->
     <!-- breadcrumb start-->
     <section class="breadcrumb breadcrumb_bg">
@@ -70,7 +48,6 @@
         </div>
     </section>
     <!-- breadcrumb start-->
-
     <!--================Category Product Area =================-->
     <section class="cat_product_area section_padding">
         <div class="container">
@@ -365,7 +342,6 @@
         </div>
     </section>
     <!--================End Category Product Area =================-->
-
     <!-- product_list part start-->
     <section class="product_list best_seller">
         <div class="container">

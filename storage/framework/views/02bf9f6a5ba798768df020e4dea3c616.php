@@ -1,6 +1,6 @@
 <?php $__env->startSection('menu'); ?>
     <section>
-        <a href="/"><strong>KONECTIVE</strong>FUNITURE</a>
+        <a href="/"><img src="IMAGE/logo-long.png" alt="#"></a>
     </section>
     <section>
         <nav>

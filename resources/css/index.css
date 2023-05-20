@@ -1,6 +1,5 @@
 *{
     font-family: Helvetica, sans-serif;
-    
 }
 a:link{
     text-decoration: none;
@@ -14,39 +13,29 @@ body{
 header{
     background-color: rgb(32,33,36);
     display: flex;
-    margin-top: 5px;
-    padding-bottom: 20px;
+    padding-bottom: -40px;
     border-bottom: 2px solid white;
     position: sticky;
     top:0;
     z-index: 999;
     user-select: none!important;
 }
- header > section:nth-child(1) a{
-    margin-top: 10px ;
-    flex: 30%;
-    text-align: left;
-    font-size: 55px;
-    letter-spacing: -5px;
-}
- header > section:nth-child(1) a{
-    color: white;
-}
- header > section:nth-child(1) strong{
-    color: salmon;
-    
-}
  header > section:nth-child(2){
     flex: 67.5%;
     text-align: right;
-    margin-top: 25px;
+    margin-top: 40px;
+    margin-right: 10px;
     color: white;
+    font-size: 16px;
+    height: 89px;
 }
 header ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    height: 62px;
+    line-height: 1;
 }
  header > section:nth-child(2) > nav li{
     display: inline-block;
@@ -64,6 +53,10 @@ header ul{
     margin: 0;
     padding: 20px 10px;
     /* border: 1px solid black; */
+}
+header > section:nth-child(2) > nav{
+    height: 63px;
+    box-sizing: unset;
 }
  header > section:nth-child(2) > nav p{
     position: relative; 
@@ -129,6 +122,7 @@ header > nav{
     display: flex;
     justify-content: right;
     user-select: none!important;
+    margin-bottom: 15px;
 }
 header > nav > a > div{
     cursor: pointer;
@@ -136,15 +130,16 @@ header > nav > a > div{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px 0 0 0;
-    padding:0 10px 10px;
-    height: 70px;
-    width: 50px;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    margin: 20px 20px 0 0;
+    padding: 10px 10px;
+    height: 80px;
+    width: 45px;
+    clip-path: polygon(65% 17%, 100% 17%, 100% 60%, 100% 100%, 0 100%, 0 0, 45% 0);
     background: rgb(255,118,93);
     border-radius: 5px ;
+    box-sizing:  unset;
 }
-header > nav > a >  div >span{
+header > nav > a >  div > span{
     margin: 12px 0 0 0;
 }
 header > nav > a > div > span > svg, header > nav > a > div > p{
@@ -157,7 +152,11 @@ header > nav > a > div:hover > span >svg{
     color: black;
 }
 /* =============================================== slider*/
- section:nth-child(2){
+header > section:nth-child(1) > a > img{
+    width: 375px;
+    height: 125px;
+}
+section:nth-child(2){
     margin: 20px 132px 0;
 
 }
@@ -239,19 +238,20 @@ header > nav > a > div:hover > span >svg{
       opacity: 1;
     }
   }
-.logout  .dropbtn {
+.logout .dropbtn {
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px 0 0 0;
+    margin: 20px 20px 0 0;
     padding:0 10px 10px;
-    height: 70px;
-    width: 50px;
+    height: 80px;
+    width: 60px;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     background: rgb(255,118,93);
     border-radius: 5px ;
+    box-sizing:  unset;
 }
   
   /* The container <div> - needed to position the dropdown content */
@@ -279,6 +279,7 @@ header > nav > a > div:hover > span >svg{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    box-sizing: unset;
 }
   
   /* Change color of dropdown links on hover */
@@ -289,6 +290,7 @@ header > nav > a > div:hover > span >svg{
   /* Show the dropdown menu on hover */
 .logout .dropdown:hover .dropdown-content {
     display: block;
+    height: 97px;
 }
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
