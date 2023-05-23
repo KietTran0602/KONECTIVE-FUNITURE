@@ -297,3 +297,7 @@ section:nth-child(2){
 .logout .dropdown:hover .dropbtn {
     background-color: rgb(246, 104, 33);
 }
+.logout img {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    height: 100px;
+}

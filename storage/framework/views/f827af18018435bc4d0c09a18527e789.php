@@ -2,15 +2,16 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Profile</title>
+	<title>KONECTIVE FURNITURE</title>
 <!-- 
 Easy Profile Template
 http://www.templatemo.com/tm-467-easy-profile
 -->
-<script src="<?php echo e(asset('js/jquery.js')); ?>" defer></script>
-<script src="<?php echo e(asset('js/jquery.backstretch.min.js')); ?>" defer></script>
-<script src="<?php echo e(asset('js/bootstrap.min.js')); ?>" defer></script>
-<script src="<?php echo e(asset('js/profile.js')); ?>" defer></script>
+	<link rel="icon" href="IMAGE/icon.png">
+	<script src="<?php echo e(asset('js/jquery.js')); ?>" defer></script>
+	<script src="<?php echo e(asset('js/jquery.backstretch.min.js')); ?>" defer></script>
+	<script src="<?php echo e(asset('js/bootstrap.min.js')); ?>" defer></script>
+	<script src="<?php echo e(asset('js/profile.js')); ?>" defer></script>
 	<!-- stylesheet css -->
     <?php echo app('Illuminate\Foundation\Vite')(['resources/css/profile.css', 'resources/css/bootstrap.min.css','resources/css/font-awesome.min.css']); ?>
 </head>
@@ -27,7 +28,7 @@ http://www.templatemo.com/tm-467-easy-profile
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<img src="IMAGE/tm-easy-profile.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
+				<img src="IMAGE/avt.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
 				<hr>
 				<h1 class="tm-title bold shadow">Hi, I am Julia</h1>
 				<h1 class="white bold shadow">Creative Director</h1>

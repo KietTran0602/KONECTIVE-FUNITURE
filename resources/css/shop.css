@@ -9,3 +9,7 @@
 @import '../css/shop/price_rangs.css';
 @import '../css/shop/slick.css';
 @import "../css/shop/style.css";
+.col-lg-9 .align-items-center .col-lg-12{
+    font-size: 25px;
+    user-select: none;
+}

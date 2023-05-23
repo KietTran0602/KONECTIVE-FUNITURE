@@ -172,6 +172,7 @@ header {
 }
 header img {
   display: inline-block !important;
+  height: 200px !important;
 }
 header h2 {
   padding-top: 40px;

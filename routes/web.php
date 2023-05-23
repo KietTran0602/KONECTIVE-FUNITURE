@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ShopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,7 @@ Route::get('/',[IndexController::class,'show']);
 Route::get('/home',[IndexController::class,'show']);
 // Route::get('/home',[LoginController::class,'signout']);
 Route::get('/product',[IndexController::class,'show']);
+Route::get('/product',[ShopController::class,'product']);
 Route::get('/furniture-set',[IndexController::class,'show']);
 Route::get('/policy',[IndexController::class,'show']);
 Route::get('/contact',[IndexController::class,'show']);
