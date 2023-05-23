@@ -13,20 +13,25 @@ class IndexController extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
     public function show(Request $REQUEST): View{
+        $product =  "";
         $cc = "layouts.index";
         if($REQUEST->Path() == 'home'){
+            $product =  "";
             $cc = "layouts.index";
         }else if($REQUEST->Path() == 'product'){
+            $product =  DB::table("Furniture")->Paginate(9);
             $cc = "layouts.store";
         }else if($REQUEST->Path() == 'funiture-set'){
+            $product =  "";
             $cc = "layouts.funiture";
         }else if($REQUEST->Path() == 'policy'){
+            $product =  "";
             $cc = "layouts.policy";
         }else if($REQUEST->Path() == 'contact'){
+            $product =  "";
             $cc = "layouts.contact";
         }
 
-        return view('menu',['cc' => $cc]);
+        return view('menu',['cc' => $cc,'products'=>$product]);
     }
-    
 }

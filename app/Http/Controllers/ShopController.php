@@ -11,7 +11,7 @@ class ShopController extends Controller
      */
     public function index():View
     {
-        return view("layouts.store");
+        return view("menu");
     }
     public function product():View
     {
@@ -20,7 +20,7 @@ class ShopController extends Controller
         // {
         //     $name = $p -> name;
         // }
-        return view("layouts.store",['products'=>$product]);
+        return view("menu",['products'=>$product]);
     }
     /**
      * Show the form for creating a new resource.

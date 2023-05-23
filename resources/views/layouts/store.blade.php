@@ -235,7 +235,7 @@
                         </div>
                         
                     @endforeach
-                    {{ $products->render('list') }}
+                    {{$products->render('list')}}
                     </div>
                 </div>
             </div>
