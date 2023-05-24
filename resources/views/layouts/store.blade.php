@@ -225,10 +225,10 @@
                     @foreach($products as $p)
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="shop/img/product/product_1.png">
+                                <img src="{{$p->img}}">
                                 <div class="single_product_text">
-                                    <h4>{{Str::limit($p->name, 50)}}</h4>
-                                    <h3>{{$p->list_price}}</h3>
+                                    <h4>{{Str::limit($p->name, 60)}}</h4>
+                                    <h3>{{$p->list_price}}vnđ / {{$p->unit}}</h3>
                                     <a href="#" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                 </div>
                             </div>

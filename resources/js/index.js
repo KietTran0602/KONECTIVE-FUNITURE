@@ -8,6 +8,27 @@
 // }
 
 //slider click
+import './bootstrap'
+
+$(document).ready(()=>{
+    var map = L.map('map').setView([10.806700123469406, 106.71422379326849], 50);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.marker([10.806700123469406, 106.71422379326849]).addTo(map).bindPopup('Aptech Computer Education D5').openPopup();
+    function onMapClick(e) {
+        L.marker([10.806700123469406, 106.71422379326849]).addTo(map).bindPopup('Aptech Computer Education D5').openPopup();
+    }
+    map.on('click', onMapClick);
+});
+import { icon, Marker } from 'leaflet';
+const iconUrl = 'https://cdn4.iconfinder.com/data/icons/small-n-flat/24/map-marker-512.png';
+const iconDefault = icon({
+  iconUrl,
+  iconSize: [41, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [9, -34],
+  tooltipAnchor: [16, -28],
+});
+Marker.prototype.options.icon = iconDefault;
 var indexValue = 1;
 showImg(indexValue);
 function btm_slide(e){showImg(indexValue = e);}

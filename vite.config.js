@@ -17,6 +17,8 @@ export default defineConfig({
                 'resources/css/bootstrap.min.css',
                 'resources/css/font-awesome.min.css',
                 'resources/css/shop.css',
+                'resources/css/contact.css',
+                'resources/css/rechange.css'
             ],
             refresh: true,
         }),

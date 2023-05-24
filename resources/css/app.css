@@ -1,0 +1,7 @@
+@import "../../node_modules/leaflet/dist/leaflet.css";
+#map {
+    height: 500px;
+    user-select: none;
+    border: 1px solid black;
+    top: 450px;
+}

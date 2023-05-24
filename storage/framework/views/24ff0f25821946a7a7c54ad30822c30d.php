@@ -9,7 +9,7 @@
                 </li>
             <?php else: ?>
                 <li class="page-item">
-                    <a href="<?php echo e($paginator->previousPageUrl()); ?>">
+                    <a href="<?php echo e($paginator->Url(1)); ?>">
                         <span class="page-link"><i class="fa fa-angle-double-left"></i></span>
                     </a>
                 </li>
@@ -34,7 +34,7 @@
             
             <?php if($paginator->hasMorePages()): ?>
                 <li class="page-item">
-                    <a  href="<?php echo e($paginator->nextPageUrl()); ?>">
+                    <a  href="<?php echo e($paginator->Url($paginator->lastPage())); ?>">
                         <span class="page-link"><i class="fa fa-angle-double-right"></i></span>
                     </a>
                 </li>

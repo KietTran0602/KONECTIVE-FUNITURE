@@ -1,5 +1,6 @@
 *{
     font-family: Helvetica, sans-serif;
+    user-select: none!important;
 }
 a:link{
     text-decoration: none;
@@ -17,7 +18,7 @@ header{
     border-bottom: 2px solid white;
     position: sticky;
     top:0;
-    z-index: 999;
+    z-index: 9999;
     user-select: none!important;
 }
  header > section:nth-child(2){

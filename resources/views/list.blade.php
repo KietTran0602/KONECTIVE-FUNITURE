@@ -9,7 +9,7 @@
                 </li>
             @else
                 <li class="page-item">
-                    <a href="{{ $paginator->previousPageUrl() }}">
+                    <a href="{{ $paginator->Url(1)}}">
                         <span class="page-link"><i class="fa fa-angle-double-left"></i></span>
                     </a>
                 </li>
@@ -34,7 +34,7 @@
             {{-- Next Page Link --}}
             @if ($paginator->hasMorePages())
                 <li class="page-item">
-                    <a  href="{{ $paginator->nextPageUrl() }}">
+                    <a  href="{{ $paginator->Url($paginator->lastPage())}}">
                         <span class="page-link"><i class="fa fa-angle-double-right"></i></span>
                     </a>
                 </li>
