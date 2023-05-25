@@ -44,5 +44,6 @@
         <section id="map"></section>
         <!-- End block content -->
     </main>
+    @yield('footer')
 </body>
 </html>

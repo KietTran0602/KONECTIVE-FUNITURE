@@ -44,5 +44,6 @@
         <section id="map"></section>
         <!-- End block content -->
     </main>
+    <?php echo $__env->yieldContent('footer'); ?>
 </body>
 </html><?php /**PATH /home/vagrant/code/KONECTIVE-FUNITURE/resources/views/layouts/contact.blade.php ENDPATH**/ ?>

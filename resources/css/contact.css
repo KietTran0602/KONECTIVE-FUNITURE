@@ -2,10 +2,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
     display: block;
     user-select: none;
-    
-}
-body:focus{
-    outline:none;
 }
 .container-ct{
     position: relative;
@@ -67,6 +63,12 @@ body:focus{
     text-align: right;
     font-size: large;
     bottom: 35px;
+}
+#map {
+    height: 500px;
+    user-select: none;
+    border: 1px solid black;
+    top: 450px;
 }
 .message{
     height: 131px;

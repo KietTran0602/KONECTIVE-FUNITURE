@@ -9,7 +9,6 @@
 
 //slider click
 import './bootstrap'
-
 $(document).ready(()=>{
     var map = L.map('map').setView([10.806700123469406, 106.71422379326849], 50);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);

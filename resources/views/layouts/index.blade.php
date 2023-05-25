@@ -5,7 +5,7 @@
     <title>KONECTIVE FURNITURE</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" defer></script>
     <link rel="icon" href="IMAGE/icon.png">
-    @vite(['resources/js/index.js','resources/css/index.css'])
+    @vite(['resources/js/index.js','resources/css/index.css','resources/css/app.css'])
 </head>
 <body>
     <!-- ========== -->
@@ -44,5 +44,6 @@
         <img src="IMAGE/index/sidebanner2.jpg">
       </div>
     </section>
+    @yield('footer')
 </body>
 </html>
