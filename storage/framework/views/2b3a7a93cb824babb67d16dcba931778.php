@@ -13,14 +13,13 @@
       <?php echo $__env->yieldContent("menu"); ?>
     </header>
     <main>
-        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+        <h1 class="text-center">Contact With Us</h1><!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là content -->
         <div class="container-ct">
-            <h1 class="text-center">Contact With Us</h1>
                  <div class="pic-ct">
                     <img src="IMAGE/Contact-pic.webp">
                 </div>
                 <div class="form-ct">
-                    <form method="post" action="https://nentang.vn/">
+                    <form method="get" action="/">
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" class="form-control" id="email" name="email"
@@ -37,13 +36,12 @@
                         </div>
                         <button class="bt" name="btnGoiLoiNhan">Send</button>
                     </form>
-                </div>  
+                </div>
             </div>
-            
         </div> 
-        <section id="map"></section>
         <!-- End block content -->
     </main>
+    <section id="map"></section>
     <?php echo $__env->yieldContent('footer'); ?>
 </body>
 </html><?php /**PATH /home/vagrant/code/KONECTIVE-FUNITURE/resources/views/layouts/contact.blade.php ENDPATH**/ ?>

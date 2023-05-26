@@ -1,15 +1,10 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     display: block;
+    overflow-x: hidden;
 }
 body:focus{
     outline:none;
-}
-.container-rc{
-    position: relative;
-    width: auto;
-    height: auto;
-    /* top: 200px; */
 }
 .text-center{
     position:relative;
@@ -28,17 +23,13 @@ body:focus{
     width: 1000px;
     text-rendering: optimizeSpeed;
 }
-
-.content-rc{
-    position: relative;
-    margin: 0;
-    padding: 0 15px 30px;
-    
+.content{
+    display: flex;
+    flex-wrap: nowrap;
 }
 h2{
-    position: relative;
+    position: relative;   
     text-align: justify;
-    left: 400px;
     line-height: 1.3;
     margin-top: 0;
     margin-bottom: 0.5em;
@@ -46,14 +37,15 @@ h2{
 }
 .rules-rc{
     position: relative;
+    left: 14%;
+    flex: 30%; 
     text-align: justify;
-    left: 400px;
     font-size: 20px;
-    width: 500px;
+    width: 100px;
 }
 .img-rc{
     position: relative;
-    width: 100%;
-    left: 920px;
-    top: -800px;
+    flex: 50%;
+    align-items: center;
+    text-align: center;
 }
