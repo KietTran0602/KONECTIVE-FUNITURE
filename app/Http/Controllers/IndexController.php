@@ -13,6 +13,11 @@ class IndexController extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
     public function show(Request $REQUEST): View{
+        $username = $REQUEST-> session () -> get ('username1');
+        $avatar = DB::select("select avatar from Loginuser where username =?",[$username]);
+        foreach($avatar as $check){
+            $avt = $check -> avatar;
+        }
         $product =  "";
         $cc = "layouts.index";
         if($REQUEST->Path() == 'home'){
@@ -32,6 +37,6 @@ class IndexController extends BaseController
             $cc = "layouts.contact";
         }
 
-        return view('menu',['cc' => $cc,'products'=>$product]);
+        return view('menu',['cc' => $cc,'products'=>$product,'avt'=>$avt]);
     }
 }

@@ -5,12 +5,12 @@
     <title>KONECTIVE FURNITURE</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" defer></script>
     <link rel="icon" href="IMAGE/icon.png">
-    @vite(['resources/js/index.js','resources/css/index.css','resources/css/contact.css','resources/css/app.css'])
+    <?php echo app('Illuminate\Foundation\Vite')(['resources/js/index.js','resources/css/index.css','resources/css/contact.css','resources/css/app.css']); ?>
 </head>
 <body>
     <!-- ========== -->
     <header>
-      @yield("menu")
+      <?php echo $__env->yieldContent("menu"); ?>
     </header>
     <main>
         
@@ -44,6 +44,6 @@
         <!-- End block content -->
     </main>
     <section id="map"></section>
-    @yield('footer')
+    <?php echo $__env->yieldContent('footer'); ?>
 </body>
-</html>
+</html><?php /**PATH /home/vagrant/KONECTIVE-FUNITURE/KONECTIVE-FUNITURE/resources/views/layouts/contact.blade.php ENDPATH**/ ?>

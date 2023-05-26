@@ -8,12 +8,12 @@ Easy Profile Template
 http://www.templatemo.com/tm-467-easy-profile
 -->
 	<link rel="icon" href="IMAGE/icon.png">
-	<script src="{{asset('js/jquery.js')}}" defer></script>
-	<script src="{{asset('js/jquery.backstretch.min.js')}}" defer></script>
-	<script src="{{asset('js/bootstrap.min.js')}}" defer></script>
-	<script src="{{asset('js/profile.js')}}" defer></script>
+	<script src="<?php echo e(asset('js/jquery.js')); ?>" defer></script>
+	<script src="<?php echo e(asset('js/jquery.backstretch.min.js')); ?>" defer></script>
+	<script src="<?php echo e(asset('js/bootstrap.min.js')); ?>" defer></script>
+	<script src="<?php echo e(asset('js/profile.js')); ?>" defer></script>
 	<!-- stylesheet css -->
-    @vite(['resources/css/profile.css', 'resources/css/bootstrap.min.css','resources/css/font-awesome.min.css'])
+    <?php echo app('Illuminate\Foundation\Vite')(['resources/css/profile.css', 'resources/css/bootstrap.min.css','resources/css/font-awesome.min.css']); ?>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
 <!-- preloader section -->
@@ -27,7 +27,7 @@ http://www.templatemo.com/tm-467-easy-profile
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<img src="{{$avt}}" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
+				<img src="<?php echo e($avt); ?>" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
 				<hr>
 				<br>
 				<form action="/profile" method="post" enctype="multipart/form-data">
@@ -155,4 +155,4 @@ http://www.templatemo.com/tm-467-easy-profile
 <!-- javascript js -->	
 
 </body>
-</html>
+</html><?php /**PATH /home/vagrant/KONECTIVE-FUNITURE/KONECTIVE-FUNITURE/resources/views/profile.blade.php ENDPATH**/ ?>
