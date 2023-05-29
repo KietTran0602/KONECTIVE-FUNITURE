@@ -16,7 +16,6 @@ http://www.templatemo.com/tm-467-easy-profile
     @vite(['resources/css/profile.css', 'resources/css/bootstrap.min.css','resources/css/font-awesome.min.css'])
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
-
 <!-- preloader section -->
 <div class="preloader">
 	<div class="sk-spinner sk-spinner-wordpress">
@@ -28,8 +27,13 @@ http://www.templatemo.com/tm-467-easy-profile
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<img src="IMAGE/avt.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
+				<img src="{{$avt}}" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
 				<hr>
+				<br>
+				<form action="/profile" method="post" enctype="multipart/form-data">
+					<input type="file" name="avatar">
+					<input type="submit" value="Create">
+				</form>
 				<h1 class="tm-title bold shadow">Hi, I am Julia</h1>
 				<h1 class="white bold shadow">Creative Director</h1>
 			</div>

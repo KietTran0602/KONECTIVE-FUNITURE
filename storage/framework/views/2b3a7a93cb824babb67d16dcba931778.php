@@ -13,7 +13,8 @@
       <?php echo $__env->yieldContent("menu"); ?>
     </header>
     <main>
-        <h1 class="text-center">Contact With Us</h1><!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là content -->
+        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+        <h1 class="text-center">Contact With Us</h1>
         <div class="container-ct">
                  <div class="pic-ct">
                     <img src="IMAGE/Contact-pic.webp">

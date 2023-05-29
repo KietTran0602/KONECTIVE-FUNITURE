@@ -13,7 +13,7 @@
     font-size: 25px;
     user-select: none;
 }
-.col-lg-9 .align-items-center .col-lg-4 .single_product_item img{
+.col-lg-9 .align-items-center .col-lg-4 .single_product_item img, .owl-carousel .owl-item img{
     font-size: 25px;
     height: 250px;
     width: 250px;

@@ -44,6 +44,7 @@ body {
 }
 .pic-ct{
     position: relative;
+    cursor: move;
     flex: 50%;
     text-align: right;
 }

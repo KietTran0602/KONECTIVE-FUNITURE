@@ -33,7 +33,8 @@ class LoginController extends BaseController
                 if($passwords == $repasswords){
                     DB::table('Loginuser')->insert([
                         'username' => $username,
-                        'passwords' => HASH::make($passwords)
+                        'passwords' => HASH::make($passwords),
+                        'avatar' => 'IMAGE/avt.jpg'
                     ]);
                     $tb = "User Create Sussecful";
                     return redirect('login')->with('tb',$tb);
@@ -49,11 +50,14 @@ class LoginController extends BaseController
         $passwordssigin = $REQUEST -> passwordssignin;
         $manguser = DB::select("select username from Loginuser where username=?",[$usernamesignin]);
         $mangpassword = DB::select("select passwords from Loginuser where username=?",[$usernamesignin]);
+        
         if(count($manguser)){
+            
             foreach($mangpassword as $check){
                 if(Hash::check($passwordssigin,$check->passwords)){
                     $r=$REQUEST->session()->put('username1',$usernamesignin);
                     return redirect('home');
+
                 }else{
                     $tb = 'Password Incorrect';
                     return redirect('login')->with('tb',$tb);

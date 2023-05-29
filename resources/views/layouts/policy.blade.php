@@ -13,7 +13,6 @@
       @yield("menu")
     </header>
     <main>
-        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
             <h1 class="text-center">Warranty policy - Product return</h1>
             <div class="prm-ct">
                 <p>Enjoy quality products and superior service from Konective Furniture. You will no longer worry, Konective Furniture is always willing to solve product problems during use.</p>
@@ -24,32 +23,25 @@
                     <p>""With the desire to ensure the interests of customers and improve service quality, customer can return or exchange goods for the most comfort and satisfaction at Konective Furniture."
                     </p>
                     <p>
-                        <b>
-                            1. CASES OF RETURNED OR EXCHANGE GOODS:
-                        </b>
+                        <b>1. CASES OF RETURNED OR EXCHANGE GOODS:</b>
                         <ul>
                             <li>The product cannot be brought into the house (narrow stairs, narrow doors, ...)</li>
                             <li>Not enough quantity, not enough set as in the order.</li>
                             <li>Item is defective, not good quality.</li>
                             <li>Products that are not on the list of products are not covered by the warranty.</li>
                             <li>The customer provides confirmation of the purchase at TAV (VAT invoice, delivery note, delivery note)</li>
-        
                         </ul>
                     </p>
                     <p>
-                        <b>
-                            2.CASE OF NOT REFUND OR PAYMENT:
-                        </b>
-                            <ul>
-                                <li>Product is used, dirty, old or damaged.</li>
-                                <li>Insufficient invoices.</li>
-                                <li>Promotional sales</li>
-                            </ul>
+                        <b>2.CASE OF NOT REFUND OR PAYMENT:</b>
+                        <ul>
+                            <li>Product is used, dirty, old or damaged.</li>
+                            <li>Insufficient invoices.</li>
+                            <li>Promotional sales</li>
+                        </ul>
                     </p>
                     <p>
-                        <b>
-                            3.TIME AND PROCEDURES FOR EXCHANGE AND REFUND.
-                        </b>
+                        <b>3.TIME AND PROCEDURES FOR EXCHANGE AND REFUND.</b>
                     </p>
                     <p>
                         "Time allowed to exchange, return goods: Within 3 days from the date of delivery, before the invoice is issued."
@@ -66,8 +58,6 @@
                     <img src="IMAGE/pic-rc.jpg" width="533px" height="800px">
                 </div>
             </div>
-                         
-        <!-- End block content -->
     </main>
     @yield('footer')
 </body>
