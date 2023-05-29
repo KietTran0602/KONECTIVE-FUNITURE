@@ -53,10 +53,74 @@ h2 {
 
 .tm-title {
 	color: #66CCFF;
+  margin-top: 231px !important;
 }
 
 .white {
   color: #fff;
+}
+#back-to-home{
+  align-items: center;
+  background-color: hsla(0,0%,100%,.8);
+  border: 0;
+  color: black;
+
+  display: flex;
+  font-size: 3rem;
+  font-weight: 600;
+  justify-content: center;
+  top:50px;
+  left: 50px;
+  line-height: 3rem;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 60px;
+  z-index: 999;
+}
+#back-to-home:hover{
+  cursor: pointer;
+}
+.img-circle{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 41%;
+
+  z-index: 998;
+}
+#choose-avt, #submit-avt{
+  display: none;
+}
+#avatar101{
+  align-items: center;
+  background-color: hsla(0,0%,100%,.8);
+  border: 0;
+  bottom: 0;
+  color: #3a729c;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: 600;
+  justify-content: center;
+  left: 0;
+  line-height: 3rem;
+  opacity: .9;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  top: 77px;
+  left: 41%;
+  z-index: 999;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.img-circle:hover ~#avatar102>#avatar101, #avatar102:hover  #avatar101{
+  opacity: 1;
 }
 
 .about,.skills,

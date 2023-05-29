@@ -19,7 +19,7 @@ class ProfileController extends BaseController
         foreach($avatar as $check){
             $avt = $check -> avatar;
         }
-        return view('profile',['avt'=>$avt]);
+        return view('profile',['avt'=>$avt, 'username'=>$username]);
     }
     public function avatar(Request $request){
         $file = $request->file('avatar');

@@ -227,8 +227,8 @@
                             <div class="single_product_item">
                                 <img src="<?php echo e($p->img); ?>">
                                 <div class="single_product_text">
-                                    <h4><?php echo e(Str::limit($p->name, 60)); ?></h4>
-                                    <h3><?php echo e($p->list_price); ?>vnđ / <?php echo e($p->unit); ?></h3>
+                                    <h4><?php echo e(Str::limit($p->name_eng, 60)); ?></h4>
+                                    <h3><?php echo e($p->list_price); ?>vnđ</h3>
                                     <a href="#" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                 </div>
                             </div>
@@ -256,41 +256,15 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-12">
                     <div class="best_product_slider owl-carousel">
-                        <div class="single_product_item">
-                            <img src="shop/img/product/product_1.png" alt="">
-                            <div class="single_product_text">
-                                <h4>Quartz Belt Watch</h4>
-                                <h3>$150.00</h3>
+                        <?php $__currentLoopData = $sale; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sales): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <div class="single_product_item">
+                                <img src="<?php echo e($sales->img); ?>" alt="">
+                                <div class="single_product_text">
+                                    <h4><?php echo e($sales->name_eng); ?></h4>
+                                    <h3><?php echo e($sales->list_price); ?>vnđ</h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="single_product_item">
-                            <img src="shop/img/product/product_2.png" alt="">
-                            <div class="single_product_text">
-                                <h4>Quartz Belt Watch</h4>
-                                <h3>$150.00</h3>
-                            </div>
-                        </div>
-                        <div class="single_product_item">
-                            <img src="shop/img/product/product_3.png" alt="">
-                            <div class="single_product_text">
-                                <h4>Quartz Belt Watch</h4>
-                                <h3>$150.00</h3>
-                            </div>
-                        </div>
-                        <div class="single_product_item">
-                            <img src="shop/img/product/product_4.png" alt="">
-                            <div class="single_product_text">
-                                <h4>Quartz Belt Watch</h4>
-                                <h3>$150.00</h3>
-                            </div>
-                        </div>
-                        <div class="single_product_item">
-                            <img src="shop/img/product/product_5.png" alt="">
-                            <div class="single_product_text">
-                                <h4>Quartz Belt Watch</h4>
-                                <h3>$150.00</h3>
-                            </div>
-                        </div>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                 </div>
             </div>

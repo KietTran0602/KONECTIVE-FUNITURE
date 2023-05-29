@@ -9,12 +9,14 @@ http://www.templatemo.com/tm-467-easy-profile
 -->
 	<link rel="icon" href="IMAGE/icon.png">
 	<script src="<?php echo e(asset('js/jquery.js')); ?>" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" defer></script>
 	<script src="<?php echo e(asset('js/jquery.backstretch.min.js')); ?>" defer></script>
 	<script src="<?php echo e(asset('js/bootstrap.min.js')); ?>" defer></script>
 	<script src="<?php echo e(asset('js/profile.js')); ?>" defer></script>
 	<!-- stylesheet css -->
-    <?php echo app('Illuminate\Foundation\Vite')(['resources/css/profile.css', 'resources/css/bootstrap.min.css','resources/css/font-awesome.min.css']); ?>
+    <?php echo app('Illuminate\Foundation\Vite')(['resources/css/profile.css', 'resources/css/bootstrap.min.css','resources/css/font-awesome.min.css','resources/js/avatar.js']); ?>
 </head>
+<?php echo $__env->yieldContent('menu'); ?>
 <body data-spy="scroll" data-target=".navbar-collapse">
 <!-- preloader section -->
 <div class="preloader">
@@ -25,16 +27,25 @@ http://www.templatemo.com/tm-467-easy-profile
 <!-- header section -->
 <header>
 	<div class="container">
+		<div id="back-to-home"><a href="/"><i class="fa-solid fa-arrow-left"></i></a></div>
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<img src="<?php echo e($avt); ?>" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
-				<hr>
-				<br>
-				<form action="/profile" method="post" enctype="multipart/form-data">
-					<input type="file" name="avatar">
-					<input type="submit" value="Create">
-				</form>
-				<h1 class="tm-title bold shadow">Hi, I am Julia</h1>
+				<div>
+					<img src="<?php echo e($avt); ?>" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
+					<form action="/profile" method="post" enctype="multipart/form-data">
+						<input id="choose-avt"type="file" name="avatar">
+						<input id="submit-avt"type="submit" value="Create">
+					</form>
+					<div id="avatar102">
+						<button type="button" id="avatar101">
+							<i class="fa-solid fa-camera"></i>
+							&nbsp Choose avatar
+						</button>
+					</div>
+					
+					
+				</div>
+				<h1 class="tm-title bold shadow">Hello <?php echo e($username); ?></h1>
 				<h1 class="white bold shadow">Creative Director</h1>
 			</div>
 		</div>
@@ -132,26 +143,6 @@ http://www.templatemo.com/tm-467-easy-profile
 		</div>
 	</div>
 </section>
-
-<!-- footer section -->
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12">
-				<p>Copyright &copy; 2084 Your Easy Profile</p>
-				<ul class="social-icons">
-					<li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-google-plus"></a></li>
-					<li><a href="#" class="fa fa-twitter"></a></li>
-					<li><a href="#" class="fa fa-dribbble"></a></li>
-					<li><a href="#" class="fa fa-github"></a></li>
-					<li><a href="#" class="fa fa-behance"></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
-
 <!-- javascript js -->	
 
 </body>

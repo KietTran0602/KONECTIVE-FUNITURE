@@ -18,7 +18,8 @@ export default defineConfig({
                 'resources/css/font-awesome.min.css',
                 'resources/css/shop.css',
                 'resources/css/contact.css',
-                'resources/css/rechange.css'
+                'resources/css/rechange.css',
+                'resources/js/avatar.js'
             ],
             refresh: true,
         }),

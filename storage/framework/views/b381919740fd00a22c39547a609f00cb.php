@@ -13,14 +13,14 @@
       <?php echo $__env->yieldContent("menu"); ?>
     </header>
     <main>
-        
-        <h1 class="text-center">Contact With Us</h1><!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+        <h1 class="text-center">Contact With Us</h1>
         <div class="container-ct">
                  <div class="pic-ct">
                     <img src="IMAGE/Contact-pic.webp">
                 </div>
                 <div class="form-ct">
-                    <form method="post" action="https://nentang.vn/">
+                    <form method="get" action="/">
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" class="form-control" id="email" name="email"
@@ -37,9 +37,8 @@
                         </div>
                         <button class="bt" name="btnGoiLoiNhan">Send</button>
                     </form>
-                </div>  
+                </div>
             </div>
-            
         </div> 
         <!-- End block content -->
     </main>

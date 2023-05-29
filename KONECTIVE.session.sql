@@ -1,4 +1,3 @@
-USE KONECTIVE;
 DROP TABLE IF EXISTS Furniture;
 CREATE TABLE Furniture (
   `id` varchar(20) DEFAULT NULL,
